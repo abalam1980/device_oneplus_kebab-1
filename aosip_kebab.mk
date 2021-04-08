@@ -26,6 +26,11 @@ $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 $(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 
+# GoogleCamera
+$(call inherit-product-if-exists, packages/apps/GoogleCamera/config.mk)
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_NAME := aosip_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
