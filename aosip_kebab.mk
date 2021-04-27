@@ -24,7 +24,7 @@ $(call inherit-product, device/oneplus/kebab/device.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
+$(call inherit-product, vendor/gapps/gapps.mk)
 
 # GoogleCamera
 $(call inherit-product-if-exists, packages/apps/GoogleCamera/config.mk)
