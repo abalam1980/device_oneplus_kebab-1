@@ -80,7 +80,7 @@
     <integer name="config_shift_interval">40</integer>
 
     <!-- Whether usage of the proximity sensor during doze is supported -->
-    <bool name="doze_proximity_sensor_supported">false</bool>
+    <bool name="doze_proximity_sensor_supported">true</bool>
 
     <!-- Whether device supports an alt. ambient display -->
     <bool name="config_alt_ambient_display">true</bool>
@@ -91,14 +91,4 @@
     <!-- This will sync FOD brightness with screen brightness. -->
     <bool name="config_fingerprintDimmingScreen">true</bool>
 
-    <!-- The component name for the default system attention service.
-         This service must be trusted, as it can be activated without explicit consent of the user.
-         See android.attention.AttentionManagerService.
-    -->
-    <string name="config_defaultAttentionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>
-
-    <!-- Live Captions provided by Google's Device Personalization Service package  -->
-    <string name="config_defaultSystemCaptionsManagerService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
-    <string name="config_defaultSystemCaptionsService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string>
-     
 </resources>
