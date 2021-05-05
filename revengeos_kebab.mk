@@ -22,20 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 $(call inherit-product, vendor/google/gms/config.mk)
 $(call inherit-product, vendor/google/pixel/config.mk)
 
-#PRODUCT_SOONG_NAMESPACES += \
-#    vendor/google/gms
-    
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # GoogleCamera
 $(call inherit-product-if-exists, packages/apps/GoogleCamera/config.mk)
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := aosip_kebab
+PRODUCT_NAME := revengeos_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
