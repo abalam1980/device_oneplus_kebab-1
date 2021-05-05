@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_kebab.mk
+    $(LOCAL_DIR)/revengeos_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_kebab-user \
-    aosip_kebab-userdebug \
-    aosip_kebab-eng
+    revengeos_kebab-user \
+    revengeos_kebab-userdebug \
+    revengeos_kebab-eng
