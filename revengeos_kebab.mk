@@ -31,6 +31,9 @@ $(call inherit-product, vendor/google/pixel/config.mk)
 REVENGEOS_BUILDTYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# FOD
+EXTRA_FOD_ANIMATIONS := true
+
 # GoogleCamera
 $(call inherit-product-if-exists, packages/apps/GoogleCamera/config.mk)
 
