@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_kebab.mk
+    $(LOCAL_DIR)/bootleg_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_kebab-user \
-    revengeos_kebab-userdebug \
-    revengeos_kebab-eng
+    bootleg_kebab-user \
+    bootleg_kebab-userdebug \
+    bootleg_kebab-eng

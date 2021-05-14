@@ -21,15 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kebab device
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common Bootleg stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 $(call inherit-product, vendor/google/gms/config.mk)
 $(call inherit-product, vendor/google/pixel/config.mk)
 
-# RevengeOS Stuff
-REVENGEOS_BUILDTYPE := OFFICIAL
+BOOTLEGGERS_BUILD_TYPE := Shishufied
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USE_SINGLE_BOOTANIMATION := true
+TARGET_PICK_BOOTANIMATION := "6"
+TARGET_BOOTLEG_ARCH := arm64
 
 # FOD
 EXTRA_FOD_ANIMATIONS := true
@@ -39,7 +41,7 @@ $(call inherit-product-if-exists, packages/apps/GoogleCamera/config.mk)
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := revengeos_kebab
+PRODUCT_NAME := bootleg_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
